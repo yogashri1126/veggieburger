@@ -6,10 +6,10 @@
   {{#each burger}}
     {{#unless this.devoured}}
       <li>
-        {{this.name}}
+        {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="devoured" value="true">
+          <input type="hidden" burger_name="devoured" value="true">
           <button type="submit">DEVOURED!</button>
         </form>
       </li>
@@ -23,10 +23,10 @@
   {{#each burger}}
     {{#if this.devoured}}
       <li>
-        {{this.name}}
+        {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="devoured" value="false">
+          <input type="hidden" burger_name="devoured" value="false">
           <button type="submit">EAT IT!</button>
         </form>
       </li>
@@ -39,13 +39,13 @@
 
   <div class="form-group">
     <label for="ca">Veggie Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <input type="text" id="ca" burger_name="burger_name">
   </div>
 
   <div class="form-group">
     <label for="slee">devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> devoured!<br>
-    <input type="radio" name="devoured" value="0"> Eat it
+    <input type="radio" burger_name="devoured" value= true checked> devoured!<br>
+    <input type="radio" burger_name="devoured" value= false> Eat it
   </div>
 
   <button type="submit">Add Veggie Burger</button>
