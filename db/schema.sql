@@ -1,9 +1,9 @@
 ### Schema
-
-CREATE DATABASE burgers_db;
+DROP DATABASE IF EXISTS burgers_db;
+CREATE DATABASE IF NOT EXISTS burgers_db;
 USE burgers_db;
 
-CREATE TABLE burgers
+CREATE TABLE IF NOT EXISTS burgers
 (
 	id int NOT NULL AUTO_INCREMENT,
 	burger_name varchar(255) NOT NULL,
