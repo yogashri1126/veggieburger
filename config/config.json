@@ -1,23 +1,13 @@
 {
   "development": {
-    "username": "root",
-    "password": "MyNewPass",
-    "database": "burgers_db",
-    "host": "localhost",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
+    "user": "root",
     "password": "MyNewPass",
     "database": "burgers_db",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "port": "3306"
   },
   "production": {
-    "username": "root",
-    "password": "MyNewPass",
-    "database": "burgers_db",
-    "host": "127.0.0.1",
+    "use_env_variable": "mysql://bnxejxxtk849fuol:xvhxr9j8cipwxpdw@mwgmw3rs78pvwk4e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ye8oqbgsyn49q7yp",
     "dialect": "mysql"
   }
 }
