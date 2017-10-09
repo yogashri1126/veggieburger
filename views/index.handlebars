@@ -3,10 +3,10 @@
 <h2>Desired Burgers!</h2>
 
 <ul>
-  {{#each burger}}
+  {{#each burgers}}
     {{#unless this.devoured}}
       <li>
-        {{this.name}}
+        {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value=true>
@@ -20,10 +20,10 @@
 <h2>Burgers that Disappeared</h2>
 
 <ul>
-  {{#each burger}}
+  {{#each burgers}}
     {{#if this.devoured}}
       <li>
-        {{this.name}}
+        {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value=false>
