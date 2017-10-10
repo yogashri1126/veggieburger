@@ -7,7 +7,7 @@
     "port": "3306"
   },
   "production": {
-    "use_env_variable": "mysql://bnxejxxtk849fuol:xvhxr9j8cipwxpdw@mwgmw3rs78pvwk4e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ye8oqbgsyn49q7yp",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
 }
