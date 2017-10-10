@@ -7,19 +7,7 @@
 
 // //console.log(config);
 
-// //determine env 
-// if(config.use_env_variable){
-//   var connection = mysql.createConnection(process.env[config.use_env_variable]);
-// }else{
-
-// connection = mysql.createConnection({
-//   port: 3306,
-//   host: "localhost",
-//   user: "root",
-//   password: "MyNewPass",
-//   database: "burgers_db"
-// });
-// }
+//determine env 
 
 // // Make connection.
 // connection.connect(function(err) {
