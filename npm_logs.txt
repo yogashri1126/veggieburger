@@ -1,0 +1,167 @@
+$ heroku logs
+2017-10-10T01:30:07.757008+00:00 app[web.1]:     at Socket.emit (events.js:188:7
+)
+2017-10-10T01:30:07.757009+00:00 app[web.1]:     at readableAddChunk (_stream_re
+adable.js:176:18)
+2017-10-10T01:30:07.757009+00:00 app[web.1]:     at Socket.Readable.push (_strea
+m_readable.js:134:10)
+2017-10-10T01:30:07.757011+00:00 app[web.1]:     --------------------
+2017-10-10T01:30:07.757011+00:00 app[web.1]:     at Protocol._enqueue (/app/node
+_modules/mysql/lib/protocol/Protocol.js:145:48)
+2017-10-10T01:30:07.757012+00:00 app[web.1]:     at Connection.query (/app/node_
+modules/mysql/lib/Connection.js:208:25)
+2017-10-10T01:30:07.757013+00:00 app[web.1]:     at Object.all (/app/config/orm.
+js:45:16)
+2017-10-10T01:30:07.757014+00:00 app[web.1]:     at Object.all (/app/models/burg
+er.js:6:9)
+2017-10-10T01:30:07.757014+00:00 app[web.1]:     at /app/controllers/burgers_con
+trollers.js:10:10
+2017-10-10T01:30:07.757015+00:00 app[web.1]:     at Layer.handle [as handle_requ
+est] (/app/node_modules/express/lib/router/layer.js:95:5)
+2017-10-10T01:30:07.757016+00:00 app[web.1]:     at next (/app/node_modules/expr
+ess/lib/router/route.js:137:13)
+2017-10-10T01:30:07.757017+00:00 app[web.1]:     at Route.dispatch (/app/node_mo
+dules/express/lib/router/route.js:112:3)
+2017-10-10T01:30:07.757018+00:00 app[web.1]:     at Layer.handle [as handle_requ
+est] (/app/node_modules/express/lib/router/layer.js:95:5)
+2017-10-10T01:30:07.757018+00:00 app[web.1]:     at /app/node_modules/express/li
+b/router/index.js:281:22
+2017-10-10T01:30:07.771080+00:00 app[web.1]:
+2017-10-10T01:30:07.783491+00:00 app[web.1]: npm ERR! Linux 3.13.0-128-generic
+2017-10-10T01:30:07.783830+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bi
+n/node" "/app/.heroku/node/bin/npm" "start"
+2017-10-10T01:30:07.784091+00:00 app[web.1]: npm ERR! node v6.11.4
+2017-10-10T01:30:07.784335+00:00 app[web.1]: npm ERR! npm  v3.10.10
+2017-10-10T01:30:07.784576+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-10-10T01:30:07.784768+00:00 app[web.1]: npm ERR! veggieburger@1.0.0 start:
+`node server.js`
+2017-10-10T01:30:07.784944+00:00 app[web.1]: npm ERR! Exit status 1
+2017-10-10T01:30:07.785123+00:00 app[web.1]: npm ERR!
+2017-10-10T01:30:07.785301+00:00 app[web.1]: npm ERR! Failed at the veggieburger
+@1.0.0 start script 'node server.js'.
+2017-10-10T01:30:07.785473+00:00 app[web.1]: npm ERR! Make sure you have the lat
+est version of node.js and npm installed.
+2017-10-10T01:30:07.785624+00:00 app[web.1]: npm ERR! If you do, this is most li
+kely a problem with the veggieburger package,
+2017-10-10T01:30:07.785783+00:00 app[web.1]: npm ERR! not with npm itself.
+2017-10-10T01:30:07.785994+00:00 app[web.1]: npm ERR! Tell the author that this
+fails on your system:
+2017-10-10T01:30:07.786153+00:00 app[web.1]: npm ERR!     node server.js
+2017-10-10T01:30:07.786328+00:00 app[web.1]: npm ERR! You can get information on
+ how to open an issue for this project with:
+2017-10-10T01:30:07.786501+00:00 app[web.1]: npm ERR!     npm bugs veggieburger
+2017-10-10T01:30:07.786652+00:00 app[web.1]: npm ERR! Or if that isn't available
+, you can get their info via:
+2017-10-10T01:30:07.786811+00:00 app[web.1]: npm ERR!     npm owner ls veggiebur
+ger
+2017-10-10T01:30:07.786978+00:00 app[web.1]: npm ERR! There is likely additional
+ logging output above.
+2017-10-10T01:30:07.799363+00:00 app[web.1]:
+2017-10-10T01:30:07.799606+00:00 app[web.1]: npm ERR! Please include the followi
+ng file with any support request:
+2017-10-10T01:30:07.799747+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-10-10T01:30:07.883236+00:00 heroku[web.1]: State changed from up to crashed
+
+2017-10-10T01:30:07.886342+00:00 heroku[web.1]: State changed from crashed to st
+arting
+2017-10-10T01:30:07.869766+00:00 heroku[web.1]: Process exited with status 1
+2017-10-10T01:30:09.691403+00:00 heroku[web.1]: Starting process with command `n
+pm start`
+2017-10-10T01:30:13.179077+00:00 app[web.1]:
+2017-10-10T01:30:13.179098+00:00 app[web.1]: > veggieburger@1.0.0 start /app
+2017-10-10T01:30:13.179099+00:00 app[web.1]: > node server.js
+2017-10-10T01:30:13.179100+00:00 app[web.1]:
+2017-10-10T01:30:13.673632+00:00 app[web.1]: { use_env_variable: 'JAWSDB_URL', d
+ialect: 'mysql' }
+2017-10-10T01:30:13.832927+00:00 app[web.1]: App listening on PORT: 4248
+2017-10-10T01:30:13.872338+00:00 app[web.1]: connected as id 2164393
+2017-10-10T01:30:14.090651+00:00 heroku[web.1]: State changed from starting to u
+p
+2017-10-10T01:33:29.080087+00:00 app[web.1]: /app/node_modules/mysql/lib/protoco
+l/Parser.js:80
+2017-10-10T01:33:29.080102+00:00 app[web.1]:         throw err; // Rethrow non-M
+ySQL errors
+2017-10-10T01:33:29.080104+00:00 app[web.1]:         ^
+2017-10-10T01:33:29.080104+00:00 app[web.1]:
+2017-10-10T01:33:29.080105+00:00 app[web.1]: Error: ER_NO_SUCH_TABLE: Table 'ye8
+oqbgsyn49q7yp.burgers' doesn't exist
+2017-10-10T01:33:29.080106+00:00 app[web.1]:     at Query.Sequence._packetToErro
+r (/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+2017-10-10T01:33:29.080111+00:00 app[web.1]:     at Query.ErrorPacket (/app/node
+_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+2017-10-10T01:33:29.080111+00:00 app[web.1]:     at Protocol._parsePacket (/app/
+node_modules/mysql/lib/protocol/Protocol.js:279:23)
+2017-10-10T01:33:29.080112+00:00 app[web.1]:     at Parser.write (/app/node_modu
+les/mysql/lib/protocol/Parser.js:76:12)
+2017-10-10T01:33:29.080113+00:00 app[web.1]:     at Protocol.write (/app/node_mo
+dules/mysql/lib/protocol/Protocol.js:39:16)
+2017-10-10T01:33:29.080113+00:00 app[web.1]:     at Socket.<anonymous> (/app/nod
+e_modules/mysql/lib/Connection.js:103:28)
+2017-10-10T01:33:29.080114+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-10-10T01:33:29.080115+00:00 app[web.1]:     at Socket.emit (events.js:188:7
+)
+2017-10-10T01:33:29.080115+00:00 app[web.1]:     at readableAddChunk (_stream_re
+adable.js:176:18)
+2017-10-10T01:33:29.080116+00:00 app[web.1]:     at Socket.Readable.push (_strea
+m_readable.js:134:10)
+2017-10-10T01:33:29.080117+00:00 app[web.1]:     --------------------
+2017-10-10T01:33:29.080118+00:00 app[web.1]:     at Protocol._enqueue (/app/node
+_modules/mysql/lib/protocol/Protocol.js:145:48)
+2017-10-10T01:33:29.080118+00:00 app[web.1]:     at Connection.query (/app/node_
+modules/mysql/lib/Connection.js:208:25)
+2017-10-10T01:33:29.080119+00:00 app[web.1]:     at Object.all (/app/models/burg
+er.js:6:9)
+2017-10-10T01:33:29.080119+00:00 app[web.1]:     at Object.all (/app/config/orm.
+js:45:16)
+2017-10-10T01:33:29.080120+00:00 app[web.1]:     at /app/controllers/burgers_con
+trollers.js:10:10
+2017-10-10T01:33:29.080120+00:00 app[web.1]:     at Layer.handle [as handle_requ
+est] (/app/node_modules/express/lib/router/layer.js:95:5)
+2017-10-10T01:33:29.080121+00:00 app[web.1]:     at next (/app/node_modules/expr
+ess/lib/router/route.js:137:13)
+2017-10-10T01:33:29.080122+00:00 app[web.1]:     at Route.dispatch (/app/node_mo
+dules/express/lib/router/route.js:112:3)
+2017-10-10T01:33:29.080122+00:00 app[web.1]:     at Layer.handle [as handle_requ
+est] (/app/node_modules/express/lib/router/layer.js:95:5)
+2017-10-10T01:33:29.080123+00:00 app[web.1]:     at /app/node_modules/express/li
+b/router/index.js:281:22
+2017-10-10T01:33:29.091053+00:00 app[web.1]:
+2017-10-10T01:33:29.108804+00:00 app[web.1]: npm ERR! Linux 3.13.0-128-generic
+2017-10-10T01:33:29.109220+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bi
+n/node" "/app/.heroku/node/bin/npm" "start"
+2017-10-10T01:33:29.109467+00:00 app[web.1]: npm ERR! node v6.11.4
+2017-10-10T01:33:29.110611+00:00 app[web.1]: npm ERR! npm  v3.10.10
+2017-10-10T01:33:29.110882+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-10-10T01:33:29.111145+00:00 app[web.1]: npm ERR! veggieburger@1.0.0 start:
+`node server.js`
+2017-10-10T01:33:29.111350+00:00 app[web.1]: npm ERR! Exit status 1
+2017-10-10T01:33:29.111574+00:00 app[web.1]: npm ERR!
+2017-10-10T01:33:29.111747+00:00 app[web.1]: npm ERR! Failed at the veggieburger
+@1.0.0 start script 'node server.js'.
+2017-10-10T01:33:29.111894+00:00 app[web.1]: npm ERR! Make sure you have the lat
+est version of node.js and npm installed.
+2017-10-10T01:33:29.112050+00:00 app[web.1]: npm ERR! If you do, this is most li
+kely a problem with the veggieburger package,
+2017-10-10T01:33:29.112452+00:00 app[web.1]: npm ERR! Tell the author that this
+fails on your system:
+2017-10-10T01:33:29.112247+00:00 app[web.1]: npm ERR! not with npm itself.
+2017-10-10T01:33:29.112644+00:00 app[web.1]: npm ERR!     node server.js
+2017-10-10T01:33:29.112855+00:00 app[web.1]: npm ERR! You can get information on
+ how to open an issue for this project with:
+2017-10-10T01:33:29.113070+00:00 app[web.1]: npm ERR!     npm bugs veggieburger
+2017-10-10T01:33:29.113209+00:00 app[web.1]: npm ERR! Or if that isn't available
+, you can get their info via:
+2017-10-10T01:33:29.113391+00:00 app[web.1]: npm ERR!     npm owner ls veggiebur
+ger
+2017-10-10T01:33:29.113586+00:00 app[web.1]: npm ERR! There is likely additional
+ logging output above.
+2017-10-10T01:33:29.127357+00:00 app[web.1]:
+2017-10-10T01:33:29.127700+00:00 app[web.1]: npm ERR! Please include the followi
+ng file with any support request:
+2017-10-10T01:33:29.127879+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-10-10T01:33:29.081541+00:00 heroku[router]: at=error code=H13 desc="Connect
+ion closed without response" method=GET path="/" host=shielded-plateau-61069.her
+okuapp.com request_id=8586e539-d48b-46b7-a165-759adf4bb27c fwd="73.232.171.73" d
+yno=web.1 connect=0ms service=90ms status=503 bytes=0 protocol=https
+2017-10-10T01:33:29.241571+00:00 heroku[web.1]: Process exited with status 1
+2017-10-10T01:33:29.253110+00:00 heroku[web.1]: State changed from up to crashed
